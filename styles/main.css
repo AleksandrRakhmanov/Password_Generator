@@ -1,0 +1,241 @@
+body {
+  background-color: rgb(10, 45, 77);
+}
+
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(19, 60, 98);
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(19, 60, 98);
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main {
+  width: 700px;
+  height: 735px;
+
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pass_container {
+  background-color: rgb(255, 255, 255);
+
+  width: 100%;
+  min-height: 60px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgb(200, 221, 208);
+}
+
+.pass_container_active {
+  background-color: rgb(255, 255, 255);
+
+  width: 100%;
+  min-height: 60px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgb(160, 231, 188);
+}
+
+.text_in_pass_coitainer {
+  font-size: 32px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.phrase_pass_gen {
+  color: rgb(233, 226, 226);
+  margin-bottom: 10px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_copy {
+  border: 2px solid rgb(62, 87, 113);
+  border-radius: 5px;
+  width: 250px;
+  height: 45px;
+  margin-top: 30px;
+  color: rgb(233, 226, 226);
+}
+
+.btn_copy_active {
+  background-color: rgb(116, 217, 156);
+  border-radius: 5px;
+  min-width: 150px;
+  height: 45px;
+  margin-top: 30px;
+  color: black;
+}
+
+.btn_gen_pass {
+  border: 2px solid rgb(62, 87, 113);
+  border-radius: 5px;
+  width: 250px;
+  height: 45px;
+  margin-top: 30px;
+  color: rgb(233, 226, 226);
+}
+
+.btn_gen_pass:hover {
+  background-color: rgb(51, 102, 149);
+}
+
+.btn_copy_and_gen_pass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(10, 37, 60);
+
+  border-radius: 5px;
+  width: 700px;
+  height: 45px;
+  margin-top: 20px;
+  color: rgb(233, 226, 226);
+  border: 2px solid rgb(8, 32, 53);
+}
+
+.settings_container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description_text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 10px;
+  color: rgb(225, 211, 211);
+  font-size: 13px;
+  text-align: center;
+}
+
+.description_container {
+  border-radius: 10px;
+
+  width: 850px;
+  position: absolute;
+  left: -80px;
+  bottom: 0;
+  margin-bottom: 180px;
+}
+
+@media (max-width: 715px) {
+  .pass_container {
+    width: 600px;
+    margin-left: 50px;
+  }
+
+  .btn_copy_and_gen_pass {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .settings_container {
+    width: 600px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 615px) {
+  .pass_container {
+    width: 550px;
+    margin-left: 74px;
+  }
+
+  .btn_copy_and_gen_pass {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+
+  .settings_container {
+    width: 557px;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .pass_container {
+    width: 450px;
+    margin-left: 120px;
+  }
+
+  .btn_copy_and_gen_pass {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .settings_container {
+    width: 455px;
+    margin-left: 118px;
+  }
+
+  .btn_copy {
+    width: 220px;
+    /* margin-left: 8px; */
+  }
+
+  .btn_gen_pass {
+    width: 220px;
+    margin-right: 7px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pass_container {
+    width: 350px;
+    margin-left: 175px;
+  }
+
+  .btn_copy_and_gen_pass {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .settings_container {
+    width: 370px;
+    margin-left: 160px;
+  }
+
+  .btn_copy {
+    width: 160px;
+    margin-left: 53px;
+  }
+
+  .btn_gen_pass {
+    width: 160px;
+    margin-right: 53px;
+  }
+}
